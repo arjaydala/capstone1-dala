@@ -1,0 +1,298 @@
+* {
+	font-family: "Alegreya Sans", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/*NAV section*/
+
+#nav {
+	position: sticky;
+	top: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-image: linear-gradient(to right, rgba(32,178,170,0.4), rgba(32,178,170,1));
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+	z-index: 1000;
+}
+
+#nav-logo {
+	font-family: "Pacifico", sans-serif;
+}
+
+.navbar .navbar-nav .nav-item {
+	color: white;
+}
+
+#nav button:hover {
+	background-color: white;
+}
+
+/*Main section*/
+
+#main {
+	background-color: whitesmoke;
+}
+
+
+/*Home Section */
+.row {
+	margin: 0 !important;
+}
+
+#home {
+	background-color: #FFF5EE;
+	padding-bottom: 150px;
+	margin-bottom: 150px;
+}
+
+#home #home-img img {
+
+	border: 10px solid lightseagreen;
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+}
+
+#home #home-desc-head {
+	text-align: left;
+	height: 50vh;
+}
+
+#home #home-desc-head h1 {
+	font-weight: bolder;
+	color: lightseagreen;
+}
+
+#home #home-desc-head p {
+	padding: 0;
+	margin: 0;
+}
+
+#home #home-desc-head .btn {
+	border: solid 2px lightseagreen;
+	margin-top: 1.5rem;
+}
+
+##home #home-desc-head .btn:hover {
+	background-color: lightseagreen;
+
+}
+
+
+/* About Section */
+
+#about {
+	height: auto;
+	margin-bottom: 5rem;
+}
+
+#about #about-img-cont img {
+	width: 50%;
+	max-height: 70vh;
+	border: 10px solid lightseagreen;
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+}
+
+#about #about-cont {
+	text-align: right;
+}
+
+#about #about-head {
+	font-size: 4rem;
+	font-style: bolder;
+	font-family: 'Righteous', cursive;
+	color: rgba(32,178,170,0.4);
+}
+
+#about #about-cont #about-desc h2 {
+	font-weight: bolder;
+}
+
+/* End of about section */
+
+
+/* Projects Section */
+
+#projects #projects-head {
+	font-size: 4rem;
+	font-style: bolder;
+	font-family: 'Righteous', cursive;
+	color: rgba(32,178,170,0.4);
+}
+
+#projects .card-deck .card {
+	box-shadow: 5px 5px 10px rgba(32,178,170,0.3);
+
+}
+
+#projects .card-deck .card img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+#projects .card-deck .card img:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
+/* End of projects section */
+
+
+/* Contact Form Section */
+
+#contact #contact-section form {
+
+	background-color: rgb(32,178,170);
+	box-shadow: rgba(0,0,0, 0.3);
+}
+
+#contact #contact-section form #button #btn-container button {
+
+	background-color: #FFF5EE;
+	color: black;
+	border: 1px solid lightseagreen;
+}
+
+
+#contact #contact-head {
+	font-size: 4rem;
+	font-style: bolder;
+	font-family: 'Righteous', cursive;
+	color: rgba(32,178,170,0.4);
+}
+
+/* Contact Form Section End */
+
+
+
+/*Footer Section*/
+
+#footer {
+	background-color: lightseagreen;
+}
+
+#footer #footer-logo {
+	width: 100px;
+}
+
+#footer #footer-logo a{
+	text-align: center;
+}
+
+
+/*End Footer Section*/
+
+
+
+
+
+
+/*Resolution Breakpoints*/
+
+@media (min-width: 576px) {
+	#about #about-cont #about-desc h2 {
+		text-align: center !important;
+	}
+}
+
+
+@media (max-width: 576px) {
+
+	#main #home #home-desc-head {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+
+}
+
+@media (max-width: 575px) {
+	
+	#home #home-img img {
+
+		display: none
+	
+	}
+
+
+	#about #about-img-cont img {
+		display: none;
+	}
+
+	#about #about-cont #about-desc {
+		text-align: center;
+	}
+
+	#about #about-cont #about-desc h2 {
+		text-align: center !important;
+	}
+
+}
+
+@media (min-width: 767px) {
+
+	#about #about-cont #about-desc h2 {
+		text-align: right !important;
+	}
+}
+
+@media (max-width: 767px) {
+
+	#main #home #home-desc-head {
+		border-left: none;
+		text-align: center !important;
+	}
+
+	#about #about-cont #about-desc h2 {
+		text-align: center !important;
+	}
+
+	#about #about-img-cont img {
+	width: 50%;
+	max-height: 35vh;
+	border: 10px solid lightseagreen;
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+
+	}
+
+	#about #about-cont #about-desc {
+		text-align: center !important;
+	}
+
+	#about {
+		height: auto;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	#about #about-img-cont img {
+	width: 500px;
+	max-height: 500px;
+	border: 10px solid lightseagreen;
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+	}
+}
+
+@media (max-width: 1199px) {
+
+	#about #about-img-cont img {
+		width: 500px;
+		max-height: 500px;
+		border: 10px solid lightseagreen;
+		box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+	}
+
+	#about #about-cont #about-desc h2 {
+		text-align: center !important;
+	}
+
+	#about #about-cont #about-desc {
+		text-align: center !important;
+	}
+}
+
